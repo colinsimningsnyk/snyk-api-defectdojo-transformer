@@ -33,7 +33,7 @@ def transform_json(data):
         defect_vuln["id"] = issue["issueData"]["id"]
         defect_vuln["description"] = issue["issueData"]["description"]
 
-        # missing: vulnerabilities[from] and vulnerability[description]
+        # missing: vulnerabilities[from]
         defect_vuln["from"] = ["juice-shop@12.3.0","fuzzball@1.4.0"]
         
         api_vulns_json["vulnerabilities"].append(defect_vuln)
